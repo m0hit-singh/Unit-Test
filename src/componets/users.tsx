@@ -13,7 +13,8 @@ export const UsersList = () => {
     async function getUsers() {
       fetch("https://fakestoreapi.com/users")
         .then((res) => res.json())
-        .then((json) => setUsers(json));
+        .then((json) => setUsers(json))
+        .catch(error => console.log(error))
     }
 
     getUsers();

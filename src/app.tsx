@@ -9,6 +9,7 @@ export const App = () => {
       <Routes>
         <Route path="/users" element={<UsersList />} />
         <Route path="/category" element={<Category />} />
+        <Route path="/" element={<UsersList />} />
       </Routes>
   );
 };

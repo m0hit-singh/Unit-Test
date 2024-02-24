@@ -13,7 +13,8 @@ export const Category = () => {
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/categories")
       .then((res) => res.json())
-      .then((json) => setCategory(json));
+      .then((json) => setCategory(json))
+      .catch(error => console.log(error));
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
