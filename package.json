@@ -2,11 +2,14 @@
   "name": "Redux",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "homepage": "https://github.com/m0hit-singh/Unit-Test",
+  "main": "src/index.tsx",
+  "homepage": "https://m0hit-singh.github.io/Unit-Test",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "vite"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",

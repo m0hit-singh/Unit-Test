@@ -5,5 +5,6 @@ export default defineConfig({
     build: {
         outDir: 'dist',
       },
-    plugins: [react()]
+    plugins: [react()],
+    base: "/Unit-Test/"
 })
